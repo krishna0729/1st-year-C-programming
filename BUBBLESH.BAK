@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,j,y,a[10]={3,5,2,4,7,6,9,8,1,10};
+clrscr();
+for(i=0;i<=9;i=i+1)
+{
+for(j=0;j<=9;j=j+1)
+{
+if(a[j]<a[j+1])
+{
+y=a[j];
+a[j]=a[j+1];
+a[j+1]=y;
+}
+}
+}
+for(i=0;i<=9;i=i+1)
+{
+printf("\n\n%d",a[i]);
+}
+getch();
+}
